@@ -7,7 +7,7 @@ function Information({weatherInfo}) {
     
   return (
     <div>
-     <h1>{weatherInfo.response.ob.feelslikeC}</h1>
+     <h1>jnjbjbjbjkbjknkj</h1>
 
     </div>
   )
