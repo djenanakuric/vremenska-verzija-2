@@ -1,5 +1,5 @@
 import React from 'react';
-import WeatherData from './WeatherData';
+
 import Information from './Information';
 
 function Content({weatherInfo}) {
@@ -7,9 +7,6 @@ function Content({weatherInfo}) {
       <div>
             <div className='firstPart'>
                 <Information weatherInfo = {weatherInfo}/>
-            </div>
-            <div className='secondPart'>
-                <WeatherData weatherInfo = {weatherInfo}/>
             </div>
       </div>
     

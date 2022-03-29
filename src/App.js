@@ -3,8 +3,8 @@ import Content from './Content';
 
 
 function App() {
-  const [cityCode, setCityCode] = useState('33028');
-  const [weatherInfo, setWeatherInfo] = useState('');
+  //const [cityCode, setCityCode] = useState('33028');
+  //const [weatherInfo, setWeatherInfo] = useState('');
   const brojac = 0;
   
 /*
@@ -24,7 +24,7 @@ useEffect( () => {
   fetchWeather();
 }, [cityCode])
  */
-const informacije = [
+const weatherInfo = [
   {
     "LocalObservationDateTime": "2022-03-29T11:42:00+02:00",
     "EpochTime": 1648546920,
@@ -402,16 +402,14 @@ const informacije = [
         }
       }
     },
-    "MobileLink": "http://www.accuweather.com/en/ba/sarajevo/33028/current-weather/33028?lang=en-us",
-    "Link": "http://www.accuweather.com/en/ba/sarajevo/33028/current-weather/33028?lang=en-us"
   }
 ];
 
-}
+console.log(weatherInfo)
   return (
     <div className="App">
      <div className='main-window'>
-       <Content />
+       <Content weatherInfo={weatherInfo}/>
      </div>
     </div>
   );
