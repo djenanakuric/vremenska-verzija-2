@@ -9,20 +9,22 @@ function Information({weatherInfo}) {
    const today = new Date();
    const locale = 'en';
    const day = (today).toLocaleDateString(locale, {weekday: 'long'});
-   const date = `${day},${today.getDate()} ${today.toLocaleDateString(locale, { month: 'long' })}\n\n`;
+   const date = `${day}, ${today.getDate()} ${today.toLocaleDateString(locale, { month: 'long' })}\n\n`;
    return (
     <div className='first-part first'>
       <table className='first'>
-        <tr>
-          <th>
-            <h1><Clock format={'HH:mm'} ticking={true} timezone={'UTC+2'} /></h1>
+        <tbody>
+         <tr>
+          <td>
+            <h1><Clock format={'HH:mm'} ticking={true} timezone={'UTC'} /></h1>
             <h4>{date}</h4>
-          </th>
-          <th>
+          </td>
+          <td>
             <h2>Sarajevo</h2>
             <h5>Bosnia and Hercegovina</h5>
-          </th>
-        </tr>
+          </td>
+        </tr> 
+        </tbody>  
       </table>
       <WeatherData weatherInfo={weatherInfo} />
     </div>

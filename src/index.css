@@ -1,15 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 html{
   height: 100%;
+  font-family: MingLiU_HKSCS-ExtB;
 }
 * {
   box-sizing: border-box;
@@ -43,27 +42,33 @@ code {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 80%;
+  width: 70%;
   padding: 20px;
 }
 
 .firstPart h2 {
   text-align: right;
-  
+  font-size: 250%;
+  margin-right: 10%;
 }
 .firstPart h5 {
   text-align: right;
+  font-size: 120%;
+  margin-right: 10%;
 }
 .firstPart h1  {
-  font-size: 350%;
+  font-size: 380%;
   text-align: left;
   margin-block-start: 0%;
   margin-block-end: 0%;
+  margin-left: 12%;
   }
 .firstPart h4 {
   text-align: left;
   margin-block-start: 0%;
   margin-block-end: 0%;
+  margin-left: 12%;
+  margin-top: 5%;
 }
 .first {
   width: 100%;
@@ -75,4 +80,34 @@ code {
 .navbar a {
   margin: 15px;
   color: aliceblue;
+  text-decoration: none;
+}
+.today-img{
+  width: 40%;
+  margin-top: 15%;
+}
+.wind-icon {
+  display: inline;
+  margin-bottom: -2.5%;
+}
+img.wind-icon {
+  max-width: 350px;
+  max-height: 200px;
+}
+
+.humidity-icon {
+  display: inline;
+  margin-bottom: -1%;
+}
+img.humidity-icon {
+  max-width: 400px;
+  max-height: 250px;
+}
+
+table {
+  text-align: center;
+}
+
+.today-info h2{
+  text-align: center;
 }
