@@ -26,382 +26,280 @@ useEffect( () => {
  */
 const weatherInfo = [
   {
-    "LocalObservationDateTime": "2022-03-29T11:42:00+02:00",
-    "EpochTime": 1648546920,
-    "WeatherText": "Sunny",
-    "WeatherIcon": 1,
-    "HasPrecipitation": false,
-    "PrecipitationType": null,
-    "IsDayTime": true,
-    "Temperature": {
-      "Metric": {
-        "Value": 15.7,
-        "Unit": "C",
-        "UnitType": 17
-      },
-      "Imperial": {
-        "Value": 60,
-        "Unit": "F",
-        "UnitType": 18
-      }
+    "Headline": {
+      "EffectiveDate": "2022-03-31T14:00:00+02:00",
+      "EffectiveEpochDate": 1648728000,
+      "Severity": 2,
+      "Text": "Rain and a thunderstorm from Thursday afternoon to late Thursday night can lead to flooding",
+      "Category": "rain",
+      "EndDate": "2022-04-01T08:00:00+02:00",
+      "EndEpochDate": 1648792800,
+      "MobileLink": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?unit=c&lang=en-us"
     },
-    "RealFeelTemperature": {
-      "Metric": {
-        "Value": 20.9,
-        "Unit": "C",
-        "UnitType": 17,
-        "Phrase": "Pleasant"
-      },
-      "Imperial": {
-        "Value": 70,
-        "Unit": "F",
-        "UnitType": 18,
-        "Phrase": "Pleasant"
-      }
-    },
-    "RealFeelTemperatureShade": {
-      "Metric": {
-        "Value": 16.2,
-        "Unit": "C",
-        "UnitType": 17,
-        "Phrase": "Cool"
-      },
-      "Imperial": {
-        "Value": 61,
-        "Unit": "F",
-        "UnitType": 18,
-        "Phrase": "Cool"
-      }
-    },
-    "RelativeHumidity": 29,
-    "IndoorRelativeHumidity": 37,
-    "DewPoint": {
-      "Metric": {
-        "Value": -2.2,
-        "Unit": "C",
-        "UnitType": 17
-      },
-      "Imperial": {
-        "Value": 28,
-        "Unit": "F",
-        "UnitType": 18
-      }
-    },
-    "Wind": {
-      "Direction": {
-        "Degrees": 315,
-        "Localized": "NW",
-        "English": "NW"
-      },
-      "Speed": {
-        "Metric": {
-          "Value": 3.7,
-          "Unit": "km/h",
-          "UnitType": 7
+    "DailyForecasts": [
+      {
+        "Date": "2022-03-31T07:00:00+02:00",
+        "EpochDate": 1648702800,
+        "Sun": {
+          "Rise": "2022-03-31T06:31:00+02:00",
+          "EpochRise": 1648701060,
+          "Set": "2022-03-31T19:11:00+02:00",
+          "EpochSet": 1648746660
         },
-        "Imperial": {
-          "Value": 2.3,
-          "Unit": "mi/h",
-          "UnitType": 9
-        }
-      }
-    },
-    "WindGust": {
-      "Speed": {
-        "Metric": {
-          "Value": 10.2,
-          "Unit": "km/h",
-          "UnitType": 7
+        "Moon": {
+          "Rise": "2022-03-31T06:29:00+02:00",
+          "EpochRise": 1648700940,
+          "Set": "2022-03-31T18:21:00+02:00",
+          "EpochSet": 1648743660,
+          "Phase": "WaningCrescent",
+          "Age": 29
         },
-        "Imperial": {
-          "Value": 6.4,
-          "Unit": "mi/h",
-          "UnitType": 9
-        }
-      }
-    },
-    "UVIndex": 5,
-    "UVIndexText": "Moderate",
-    "Visibility": {
-      "Metric": {
-        "Value": 16.1,
-        "Unit": "km",
-        "UnitType": 6
-      },
-      "Imperial": {
-        "Value": 10,
-        "Unit": "mi",
-        "UnitType": 2
-      }
-    },
-    "ObstructionsToVisibility": "",
-    "CloudCover": 0,
-    "Ceiling": {
-      "Metric": {
-        "Value": 10211,
-        "Unit": "m",
-        "UnitType": 5
-      },
-      "Imperial": {
-        "Value": 33500,
-        "Unit": "ft",
-        "UnitType": 0
-      }
-    },
-    "Pressure": {
-      "Metric": {
-        "Value": 1015,
-        "Unit": "mb",
-        "UnitType": 14
-      },
-      "Imperial": {
-        "Value": 29.97,
-        "Unit": "inHg",
-        "UnitType": 12
-      }
-    },
-    "PressureTendency": {
-      "LocalizedText": "Falling",
-      "Code": "F"
-    },
-    "Past24HourTemperatureDeparture": {
-      "Metric": {
-        "Value": 1.7,
-        "Unit": "C",
-        "UnitType": 17
-      },
-      "Imperial": {
-        "Value": 3,
-        "Unit": "F",
-        "UnitType": 18
-      }
-    },
-    "ApparentTemperature": {
-      "Metric": {
-        "Value": 16.1,
-        "Unit": "C",
-        "UnitType": 17
-      },
-      "Imperial": {
-        "Value": 61,
-        "Unit": "F",
-        "UnitType": 18
-      }
-    },
-    "WindChillTemperature": {
-      "Metric": {
-        "Value": 15.6,
-        "Unit": "C",
-        "UnitType": 17
-      },
-      "Imperial": {
-        "Value": 60,
-        "Unit": "F",
-        "UnitType": 18
-      }
-    },
-    "WetBulbTemperature": {
-      "Metric": {
-        "Value": 7.5,
-        "Unit": "C",
-        "UnitType": 17
-      },
-      "Imperial": {
-        "Value": 46,
-        "Unit": "F",
-        "UnitType": 18
-      }
-    },
-    "Precip1hr": {
-      "Metric": {
-        "Value": 0,
-        "Unit": "mm",
-        "UnitType": 3
-      },
-      "Imperial": {
-        "Value": 0,
-        "Unit": "in",
-        "UnitType": 1
-      }
-    },
-    "PrecipitationSummary": {
-      "Precipitation": {
-        "Metric": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Imperial": {
-          "Value": 0,
-          "Unit": "in",
-          "UnitType": 1
-        }
-      },
-      "PastHour": {
-        "Metric": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Imperial": {
-          "Value": 0,
-          "Unit": "in",
-          "UnitType": 1
-        }
-      },
-      "Past3Hours": {
-        "Metric": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Imperial": {
-          "Value": 0,
-          "Unit": "in",
-          "UnitType": 1
-        }
-      },
-      "Past6Hours": {
-        "Metric": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Imperial": {
-          "Value": 0,
-          "Unit": "in",
-          "UnitType": 1
-        }
-      },
-      "Past9Hours": {
-        "Metric": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Imperial": {
-          "Value": 0,
-          "Unit": "in",
-          "UnitType": 1
-        }
-      },
-      "Past12Hours": {
-        "Metric": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Imperial": {
-          "Value": 0,
-          "Unit": "in",
-          "UnitType": 1
-        }
-      },
-      "Past18Hours": {
-        "Metric": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Imperial": {
-          "Value": 0,
-          "Unit": "in",
-          "UnitType": 1
-        }
-      },
-      "Past24Hours": {
-        "Metric": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Imperial": {
-          "Value": 0,
-          "Unit": "in",
-          "UnitType": 1
-        }
-      }
-    },
-    "TemperatureSummary": {
-      "Past6HourRange": {
-        "Minimum": {
-          "Metric": {
-            "Value": 2.6,
+        "Temperature": {
+          "Minimum": {
+            "Value": 10,
             "Unit": "C",
             "UnitType": 17
           },
-          "Imperial": {
-            "Value": 37,
-            "Unit": "F",
-            "UnitType": 18
+          "Maximum": {
+            "Value": 15.2,
+            "Unit": "C",
+            "UnitType": 17
           }
         },
-        "Maximum": {
-          "Metric": {
-            "Value": 15.7,
+        "RealFeelTemperature": {
+          "Minimum": {
+            "Value": 8.7,
             "Unit": "C",
-            "UnitType": 17
+            "UnitType": 17,
+            "Phrase": "Chilly"
           },
-          "Imperial": {
-            "Value": 60,
-            "Unit": "F",
-            "UnitType": 18
-          }
-        }
-      },
-      "Past12HourRange": {
-        "Minimum": {
-          "Metric": {
-            "Value": 2.6,
+          "Maximum": {
+            "Value": 13,
             "Unit": "C",
-            "UnitType": 17
-          },
-          "Imperial": {
-            "Value": 37,
-            "Unit": "F",
-            "UnitType": 18
+            "UnitType": 17,
+            "Phrase": "Cool"
           }
         },
-        "Maximum": {
-          "Metric": {
-            "Value": 15.7,
+        "RealFeelTemperatureShade": {
+          "Minimum": {
+            "Value": 8.7,
             "Unit": "C",
-            "UnitType": 17
+            "UnitType": 17,
+            "Phrase": "Chilly"
           },
-          "Imperial": {
-            "Value": 60,
-            "Unit": "F",
-            "UnitType": 18
-          }
-        }
-      },
-      "Past24HourRange": {
-        "Minimum": {
-          "Metric": {
-            "Value": 2.6,
+          "Maximum": {
+            "Value": 12.2,
             "Unit": "C",
-            "UnitType": 17
-          },
-          "Imperial": {
-            "Value": 37,
-            "Unit": "F",
-            "UnitType": 18
+            "UnitType": 17,
+            "Phrase": "Cool"
           }
         },
-        "Maximum": {
-          "Metric": {
-            "Value": 20.7,
+        "HoursOfSun": 0.8,
+        "DegreeDaySummary": {
+          "Heating": {
+            "Value": 5,
             "Unit": "C",
             "UnitType": 17
           },
-          "Imperial": {
-            "Value": 69,
-            "Unit": "F",
-            "UnitType": 18
+          "Cooling": {
+            "Value": 0,
+            "Unit": "C",
+            "UnitType": 17
           }
-        }
+        },
+        "AirAndPollen": [
+          {
+            "Name": "AirQuality",
+            "Value": 0,
+            "Category": "Good",
+            "CategoryValue": 1,
+            "Type": "Ozone"
+          },
+          {
+            "Name": "Grass",
+            "Value": 0,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Mold",
+            "Value": 0,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Ragweed",
+            "Value": 0,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "Tree",
+            "Value": 0,
+            "Category": "Low",
+            "CategoryValue": 1
+          },
+          {
+            "Name": "UVIndex",
+            "Value": 2,
+            "Category": "Low",
+            "CategoryValue": 1
+          }
+        ],
+        "Day": {
+          "Icon": 18,
+          "IconPhrase": "Rain",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Heavy",
+          "ShortPhrase": "Heavy rain and a thunderstorm",
+          "LongPhrase": "Heavy rain and a thunderstorm; there is a risk for major flooding",
+          "PrecipitationProbability": 99,
+          "ThunderstormProbability": 30,
+          "RainProbability": 99,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 16.7,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 184,
+              "Localized": "S",
+              "English": "S"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 50,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 137,
+              "Localized": "SE",
+              "English": "SE"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 27.8,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 27.8,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 10,
+          "HoursOfRain": 10,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 99,
+          "Evapotranspiration": {
+            "Value": 1.3,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 3263.2,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Night": {
+          "Icon": 18,
+          "IconPhrase": "Rain",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Heavy",
+          "ShortPhrase": "Heavy rain",
+          "LongPhrase": "Heavy rain; there is a risk for major flooding",
+          "PrecipitationProbability": 99,
+          "ThunderstormProbability": 6,
+          "RainProbability": 99,
+          "SnowProbability": 0,
+          "IceProbability": 0,
+          "Wind": {
+            "Speed": {
+              "Value": 9.3,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 176,
+              "Localized": "S",
+              "English": "S"
+            }
+          },
+          "WindGust": {
+            "Speed": {
+              "Value": 25.9,
+              "Unit": "km/h",
+              "UnitType": 7
+            },
+            "Direction": {
+              "Degrees": 152,
+              "Localized": "SSE",
+              "English": "SSE"
+            }
+          },
+          "TotalLiquid": {
+            "Value": 20.3,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Rain": {
+            "Value": 20.3,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "Snow": {
+            "Value": 0,
+            "Unit": "cm",
+            "UnitType": 4
+          },
+          "Ice": {
+            "Value": 0,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "HoursOfPrecipitation": 10,
+          "HoursOfRain": 10,
+          "HoursOfSnow": 0,
+          "HoursOfIce": 0,
+          "CloudCover": 99,
+          "Evapotranspiration": {
+            "Value": 0.3,
+            "Unit": "mm",
+            "UnitType": 3
+          },
+          "SolarIrradiance": {
+            "Value": 134.1,
+            "Unit": "W/m²",
+            "UnitType": 33
+          }
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?day=1&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?day=1&unit=c&lang=en-us"
       }
-    },
+    ]
   }
 ];
 

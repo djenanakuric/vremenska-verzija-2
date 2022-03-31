@@ -44,6 +44,7 @@ code {
   z-index: 2;
   width: 70%;
   padding: 20px;
+  max-width: 900px;
 }
 
 .firstPart h2 {
@@ -83,7 +84,7 @@ code {
   text-decoration: none;
 }
 .today-img{
-  width: 40%;
+  width: 50%;
   margin-top: 15%;
 }
 .wind-icon {
@@ -110,4 +111,9 @@ table {
 
 .today-info h2{
   text-align: center;
+}
+
+.today-info h1{
+  text-align: center;
+  font-size: 250%;
 }
