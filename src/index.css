@@ -22,7 +22,7 @@ code {
   background-image: url(sarajevo.jpg);
   filter: blur(0px) ;
   -webkit-filter: blur(0px);
-  height: 800px;
+  height: 950px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,9 +75,6 @@ code {
   width: 100%;
 }
 
-.navbar {
-  margin-top: 10%;
-}
 .navbar a {
   margin: 15px;
   color: aliceblue;

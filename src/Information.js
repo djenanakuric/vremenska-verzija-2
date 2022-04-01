@@ -2,11 +2,12 @@ import React, {useState} from 'react';
 import Clock from 'react-live-clock';
 import {Switch} from 'antd';
 import WeatherData from './WeatherData';
-function Information({weatherInfo}) {
+function Information({weatherInfo, currentCond}) {
     const [curTime, setCurTime] = useState('')
    // setCurTime(today.getHours().toLocaleString + ':' + today.getMinutes().toLocaleString);
 
    const today = new Date();
+   console.log(today);
    const locale = 'en';
    const day = (today).toLocaleDateString(locale, {weekday: 'long'});
    const date = `${day}, ${today.getDate()} ${today.toLocaleDateString(locale, { month: 'long' })}\n\n`;
@@ -18,6 +19,7 @@ function Information({weatherInfo}) {
           <td>
             <h1><Clock format={'HH:mm'} ticking={true} timezone={'UTC'} /></h1>
             <h4>{date}</h4>
+            
           </td>
           <td>
             <h2>Sarajevo</h2>
@@ -26,7 +28,7 @@ function Information({weatherInfo}) {
         </tr> 
         </tbody>  
       </table>
-      <WeatherData weatherInfo={weatherInfo} />
+      <WeatherData weatherInfo={weatherInfo} currentCond = {currentCond} />
     </div>
   )
 }

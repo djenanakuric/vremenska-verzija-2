@@ -24,6 +24,29 @@ useEffect( () => {
   fetchWeather();
 }, [cityCode])
  */
+const currentCond = [
+  {
+    "LocalObservationDateTime": "2022-04-01T13:47:00+02:00",
+    "EpochTime": 1648813620,
+    "WeatherText": "Light rain",
+    "WeatherIcon": 12,
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "IsDayTime": true,
+    "Temperature": {
+      "Metric": {
+        "Value": 10.8,
+        "Unit": "C",
+        "UnitType": 17
+      },
+      "Imperial": {
+        "Value": 51,
+        "Unit": "F",
+        "UnitType": 18
+      }
+    }
+  }
+]
 const weatherInfo = [
   {
     "Headline": {
@@ -303,11 +326,191 @@ const weatherInfo = [
   }
 ];
 
+const nexDay = [
+  {
+    "Headline": {
+      "EffectiveDate": "2022-04-02T20:00:00+02:00",
+      "EffectiveEpochDate": 1648922400,
+      "Severity": 3,
+      "Text": "Mixed rain and snow Saturday night",
+      "Category": "snow/rain",
+      "EndDate": "2022-04-03T08:00:00+02:00",
+      "EndEpochDate": 1648965600,
+      "MobileLink": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?unit=c&lang=en-us",
+      "Link": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?unit=c&lang=en-us"
+    },
+    "DailyForecasts": [
+      {
+        "Date": "2022-04-01T07:00:00+02:00",
+        "EpochDate": 1648789200,
+        "Temperature": {
+          "Minimum": {
+            "Value": 4.6,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 13.1,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "Day": {
+          "Icon": 12,
+          "IconPhrase": "Showers",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Night": {
+          "Icon": 18,
+          "IconPhrase": "Rain",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?day=1&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?day=1&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2022-04-02T07:00:00+02:00",
+        "EpochDate": 1648875600,
+        "Temperature": {
+          "Minimum": {
+            "Value": -0.2,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 11.4,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "Day": {
+          "Icon": 12,
+          "IconPhrase": "Showers",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Night": {
+          "Icon": 29,
+          "IconPhrase": "Rain and snow",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Mixed",
+          "PrecipitationIntensity": "Light"
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?day=2&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?day=2&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2022-04-03T07:00:00+02:00",
+        "EpochDate": 1648962000,
+        "Temperature": {
+          "Minimum": {
+            "Value": -2,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 8.7,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "Day": {
+          "Icon": 12,
+          "IconPhrase": "Showers",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Night": {
+          "Icon": 38,
+          "IconPhrase": "Mostly cloudy",
+          "HasPrecipitation": false
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?day=3&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?day=3&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2022-04-04T07:00:00+02:00",
+        "EpochDate": 1649048400,
+        "Temperature": {
+          "Minimum": {
+            "Value": -0.6,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 11.8,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "Day": {
+          "Icon": 12,
+          "IconPhrase": "Showers",
+          "HasPrecipitation": true,
+          "PrecipitationType": "Rain",
+          "PrecipitationIntensity": "Light"
+        },
+        "Night": {
+          "Icon": 38,
+          "IconPhrase": "Mostly cloudy",
+          "HasPrecipitation": false
+        },
+        "Sources": [
+          "AccuWeather"
+        ],
+        "MobileLink": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?day=4&unit=c&lang=en-us",
+        "Link": "http://www.accuweather.com/en/ba/sarajevo/33028/daily-weather-forecast/33028?day=4&unit=c&lang=en-us"
+      },
+      {
+        "Date": "2022-04-05T07:00:00+02:00",
+        "EpochDate": 1649134800,
+        "Temperature": {
+          "Minimum": {
+            "Value": -1.1,
+            "Unit": "C",
+            "UnitType": 17
+          },
+          "Maximum": {
+            "Value": 14.7,
+            "Unit": "C",
+            "UnitType": 17
+          }
+        },
+        "Day": {
+          "Icon": 6,
+          "IconPhrase": "Mostly cloudy",
+          "HasPrecipitation": false
+        },
+        "Night": {
+          "Icon": 33,
+          "IconPhrase": "Clear",
+          "HasPrecipitation": false
+        },
+      }
+    ]
+  }
+]
 console.log(weatherInfo)
+console.log(currentCond)
   return (
     <div className="App">
      <div className='main-window'>
-       <Content weatherInfo={weatherInfo}/>
+       <Content weatherInfo={weatherInfo} currentCond={currentCond}/>
      </div>
     </div>
   );

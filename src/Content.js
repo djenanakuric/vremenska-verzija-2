@@ -2,11 +2,11 @@ import React from 'react';
 
 import Information from './Information';
 
-function Content({weatherInfo}) {
+function Content({weatherInfo, currentCond}) {
   return (
       <div>
             <div className='firstPart'>
-                <Information weatherInfo = {weatherInfo}/>
+                <Information weatherInfo = {weatherInfo} currentCond = {currentCond}/>
             </div>
       </div>
     
