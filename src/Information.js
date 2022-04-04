@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Clock from 'react-live-clock';
 import {Switch} from 'antd';
 import WeatherData from './WeatherData';
-function Information({weatherInfo, currentCond}) {
+function Information({weatherInfo, currentCond, nextDay}) {
     const [curTime, setCurTime] = useState('')
    // setCurTime(today.getHours().toLocaleString + ':' + today.getMinutes().toLocaleString);
 
@@ -28,7 +28,7 @@ function Information({weatherInfo, currentCond}) {
         </tr> 
         </tbody>  
       </table>
-      <WeatherData weatherInfo={weatherInfo} currentCond = {currentCond} />
+      <WeatherData weatherInfo={weatherInfo} currentCond = {currentCond} nextDay = {nextDay} />
     </div>
   )
 }

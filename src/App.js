@@ -326,7 +326,7 @@ const weatherInfo = [
   }
 ];
 
-const nexDay = [
+const nextDay = [
   {
     "Headline": {
       "EffectiveDate": "2022-04-02T20:00:00+02:00",
@@ -507,10 +507,11 @@ const nexDay = [
 ]
 console.log(weatherInfo)
 console.log(currentCond)
+console.log(nextDay)
   return (
     <div className="App">
      <div className='main-window'>
-       <Content weatherInfo={weatherInfo} currentCond={currentCond}/>
+       <Content weatherInfo={weatherInfo} currentCond={currentCond} nextDay = {nextDay}/>
      </div>
     </div>
   );
