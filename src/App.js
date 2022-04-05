@@ -508,6 +508,7 @@ const nextDay = [
 console.log(weatherInfo)
 console.log(currentCond)
 console.log(nextDay)
+console.log(nextDay[0].DailyForecasts[0].Date)
   return (
     <div className="App">
      <div className='main-window'>

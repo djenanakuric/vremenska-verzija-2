@@ -3,14 +3,10 @@ import Clock from 'react-live-clock';
 import {Switch} from 'antd';
 import WeatherData from './WeatherData';
 function Information({weatherInfo, currentCond, nextDay}) {
-    const [curTime, setCurTime] = useState('')
-   // setCurTime(today.getHours().toLocaleString + ':' + today.getMinutes().toLocaleString);
-
    const today = new Date();
    console.log(today);
-   const locale = 'en';
-   const day = (today).toLocaleDateString(locale, {weekday: 'long'});
-   const date = `${day}, ${today.getDate()} ${today.toLocaleDateString(locale, { month: 'long' })}\n\n`;
+   const day = (today).toLocaleDateString('en', {weekday: 'long'});
+   const date = `${day}, ${today.getDate()} ${today.toLocaleDateString('en', {month: 'long' })}\n\n`;
    return (
     <div className='first-part first'>
       <table className='first'>
