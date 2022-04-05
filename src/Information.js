@@ -17,7 +17,7 @@ function Information({weatherInfo, currentCond, nextDay}) {
         <tbody>
          <tr>
           <td>
-            <h1><Clock format={'HH:mm'} ticking={true} timezone={'UTC+2'} /></h1>
+            <h1><Clock format={'HH:mm'} ticking={true} timezone={'UTC'} /></h1>
             <h4>{date}</h4>
             
           </td>
